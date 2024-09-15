@@ -1,0 +1,91 @@
+
+
+@media screen and (max-width: 576px) {
+    .Services .item {
+        width: 100%;
+    }
+
+    .portofolio .image-container:hover {
+        width: 100%;
+    }
+
+    .blog .container {
+        width: 100%;
+    }
+
+    .about .pic {
+        width: 100%;
+    }
+
+    .about .text {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .Services .item {
+        width: 50%;
+    }
+
+    .portofolio .image-container:hover {
+        width: 50%;
+    }
+
+    .blog .container {
+        width: 50%;
+    }
+
+    .about .pic {
+        width: 100%;
+    }
+
+    .about .text {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Services .item {
+        width: calc(100% / 3);
+    }
+
+    .portofolio .image-container:hover {
+        width: calc(100% / 3);
+    }
+
+    .blog .container {
+        width: calc(100% / 3);
+    }
+
+    .about .pic {
+        width: 50%;
+    }
+
+    .about .text {
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .Services .item {
+        width: 25%;
+    }
+
+    .portofolio .image-container:hover {
+        width: 25%;
+    }
+
+    .blog .container {
+        width: 25%;
+    }
+
+    .about .pic {
+        width: 50%;
+    }
+
+    .about .text {
+        width: 50%;
+    }
+}

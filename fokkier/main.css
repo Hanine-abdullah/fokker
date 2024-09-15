@@ -1,0 +1,774 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(images/hero\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header .layer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+.header .logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(255, 48, 91);
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin-left: 100px;
+
+
+}
+
+.header .links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0 20px;
+    margin-right: 100px;
+}
+
+.header .links li a {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+}
+
+
+.header .content {
+    text-align: center;
+    color: rgb(227, 227, 227);
+}
+
+.header .content h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+    color: rgb(255, 48, 91);
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 38px;
+    font-family: "Source Code Pro", monospace;
+
+}
+
+.header .content h4 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-family: "Source Code Pro", monospace;
+    line-height: 22px;
+
+
+}
+
+.header .content .myspan {
+    border-right: solid white 3px;
+    color: white;
+}
+
+.header .content .h4::after {
+    border-right: solid white 2px;
+    color: white;
+    content: '';
+    width: 2px;
+    height: 10px;
+    padding: 2px;
+
+}
+
+.header .content .myspan {
+
+    animation: disappear 1s infinite;
+    animation-direction: alternate;
+    display: inline-block;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 150px;
+
+}
+.about .pic
+{
+    width: 30%;
+}
+.about .main-pic
+{
+    display: flex;
+    align-items: flex-end;
+}
+.about .main-pic img
+{
+ width: 95%;
+
+}
+
+.about .item
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+    border-radius: 2px;
+    width: 350px;
+    height: 440px;
+}
+
+.about .item {
+    overflow: hidden;
+    height: 410px;
+
+}
+
+.item:hover .overlay {
+    transition: transform 2s;
+    transform: translateY(-100%);
+    opacity: 1;
+
+}
+
+.overlay {
+
+    position: absolute;
+    top: 48px;
+    left: 35px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.484);
+}
+
+.overlay img {
+    border-radius: 50%;
+
+}
+
+.overlay img:hover {
+    cursor: pointer;
+}
+.about .text {
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.about .text h2 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(51, 51, 51);
+    line-height: 22px;
+    position: relative;
+
+}
+
+.about .text h2::before {
+    content: '';
+    width: 4px;
+    background-color: rgb(237, 73, 89);
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+
+
+}
+
+.about .text p {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    line-height: 25px;
+}
+
+.about .text ul {
+    list-style: none;
+    text-align: left;
+
+}
+
+.about .text li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.about .text ul span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 16px;
+}
+
+.about .text ul p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 16px;
+}
+
+.about .text .list {
+    display: flex;
+    align-items: center;
+}
+
+.about .butt2 img {
+    width:
+        30%;
+}
+
+.about .butt1 img {
+    width: 17%;
+}
+
+.about .butt1 {
+    color: white;
+    background-color: rgb(237, 73, 89);
+    padding: 6px;
+    margin: 8px;
+    border: solid rgb(237, 73, 89) 5px;
+    border-radius: 5px;
+    display: inline-flex;
+    text-align: center;
+    height: auto;
+    width: 150px;
+
+}
+
+.about .butt2 {
+    color: white;
+    background-color: rgb(237, 73, 89);
+    padding: 10px;
+    margin: 10px;
+    border: solid rgb(237, 73, 89) 5px;
+    border-radius: 5px;
+    display: inline-flex;
+    text-align: center;
+    height: auto;
+    width: 100px;
+    text-decoration: none;
+}
+
+.about .butt1:hover {
+    background-color: rgb(237, 35, 56);
+    color: black;
+}
+
+.about .butt2:hover {
+    background-color: rgb(237, 35, 56);
+    color: black;
+}
+
+.Services {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    padding: 50px;
+
+}
+
+.Services h2 {
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    line-height: 30px;
+    font-size: 32px;
+
+}
+
+.Services .elemnts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+
+}
+
+.Services .item {
+    padding: 30px;
+
+}
+
+.Services .item:hover {
+    background-color: white;
+}
+
+.Services .item h3 {
+    font-size: 22px;
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+    font-family: 600;
+    color: RGB(51, 51, 51);
+}
+
+.Services .item p {
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+    font-family: 400;
+    color: RGB(85, 85, 85);
+    text-align: center;
+}
+
+.Services .itemimg {
+    width: 30%;
+}
+
+.portofolio h2 {
+    text-align: center;
+    color: RGB(51, 51, 51);
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Source Code Pro", monospace;
+}
+
+.lines3 {
+    width: 250px;
+    background-color: rgb(237, 73, 89);
+    margin: auto;
+    position: relative;
+    height: 1px;
+
+}
+
+.lines3::after {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: rgb(237, 73, 89);
+    position: absolute;
+    top: 7px;
+    left: 50px;
+}
+
+.lines3::before {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: rgb(237, 73, 89);
+    position: absolute;
+    bottom: 7px;
+    right: 70px;
+
+}
+
+.portofolio .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+
+.portofolio .button {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: RGB(51, 51, 51);
+    padding: 15px;
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.portofolio .special-but {
+    color: rgb(237, 73, 89);
+}
+
+.portofolio .pic-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    position: relative;
+
+}
+
+.portofolio .pic-line img {
+    width: 95%;
+    display: block;
+
+}
+
+.portofolio .pic-line .image-container {
+    position: relative;
+}
+
+.portofolio .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(60, 60, 60, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portofolio .image-container:hover .overlay {
+    opacity: 1;
+}
+
+.numbers {
+    background-color: rgb(241, 241, 241);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numbers .item {
+    padding: 0 20px;
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.numbers .item img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+
+}
+
+.numbers .item h3 {
+    color: RGB(51, 51, 51);
+    font-weight: 800;
+    font-size: 26px;
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.numbers .item h5 {
+    color: RGB(85, 85, 85);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    margin: 0;
+}
+
+.feadback h2 {
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+}
+
+.feadback .first-feadback {
+    background-color: rgb(241, 241, 241);
+    width: 50%;
+    position: relative;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.feadback .triangle {
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid rgb(237, 73, 89);
+    position: absolute;
+    top: -20px;
+    left: -95px;
+    rotate: -45deg;
+    z-index: 1;
+
+}
+
+.feadback .feadback-img {
+    width: 20%;
+    z-index: 3;
+
+}
+
+.feadback .feadback-img img {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+.feadback .feadback-content {
+    width: 80%;
+}
+
+.feadback .feadback-content a {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.feadback .same-line {
+    display: inline-flex;
+}
+
+.feadback .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    background-color: rgb(241, 241, 241);
+    padding: 50px 150px;
+    height: auto;
+}
+
+.blog .container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: center;
+    width: 370px;
+    height: 500px;
+}
+
+.blog h2 {
+    font-weight: 800;
+    font-size: 32px;
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    color: RGB(51, 51, 51);
+    line-height: 30px;
+}
+
+.blog .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog .container .blog-img {
+    width: 370px;
+    height: 180px;
+    padding-bottom: 20px;
+
+}
+.video-container 
+{
+
+    width: 370px; 
+    height: 210px;
+    
+ }
+ .video-container video
+ {
+    height:210px ;
+ }
+.blog .container .content {
+    width: 370px;
+    text-align: left;
+
+}
+
+.blog .container .blog-img img {
+    width: 100%;
+}
+
+.blog .content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(85, 85, 85);
+    font-family: "Roboto", sans-serif;
+
+}
+
+.blog .content a {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+
+}
+
+.blog .content a:hover {
+    color: rgb(255, 48, 91);
+}
+
+.blog .content .more {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.blog .content .more:hover {
+    color: rgb(255, 48, 91);
+}
+
+#Contact-us {
+    overflow: hidden;
+}
+
+#Contact-us h2 {
+    text-align: center;
+    color: RGB(51, 51, 51);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: "Source Code Pro", monospace;
+}
+
+
+#Contact-us .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+#Contact-us .form-group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#Contact-us .form-group1 input {
+    width: 300px;
+    padding: 15px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+#Contact-us .form-group input,
+#Contact-us .form-group textarea {
+    width: 750px;
+    padding: 15px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+#Contact-us .form button {
+    color: white;
+    text-align: left;
+    background-color: rgb(237, 73, 89);
+    border: solid 2px rgb(237, 73, 89);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#Contact-us .form button:hover {
+    cursor: not-allowed;
+}
+
+.final-section {
+    background-color: rgb(51, 51, 51);
+    padding: 40px;
+}
+
+.final-section p {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+
+}
+
+.final-section span a {
+    color: RGB(255, 48, 91);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.final-section .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-section .icons img {
+    width: 100%;
+}
+
